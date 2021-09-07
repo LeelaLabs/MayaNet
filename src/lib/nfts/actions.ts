@@ -19,7 +19,7 @@ export async function createFaucetContract(
   const metadataMap = new MichelsonMap<string, string>();
   const resp = await uploadIPFSJSON(system.config.ipfsApi, {
     name,
-    description: 'An OpenMinter base collection contract.',
+    description: 'Chess Coinage based on OpenMinter base collection contract.',
     interfaces: ['TZIP-012', 'TZIP-016', 'TZIP-020'],
     tokenCategory: 'collectibles'
   });
